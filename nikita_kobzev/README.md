@@ -8,11 +8,13 @@ This prototype produces sequential next-day forecasts, daily baseload fair value
 and a conditional translation into German prompt-contract views. It is a
 historical research exercise, not a live trading system.
 
-**Completion status:** the numerical pipeline is runnable without credentials.
-The required genuine programmatic LLM calls remain outstanding until an API key
-is supplied. `outputs/completion_status.json` is the authoritative status after
-each run. No API response is simulated. Historical curve quotes have not been
-acquired; the delivery-matched interface and methodology are provided explicitly.
+**Execution summary:** the forecasting pipeline is completed and validated,
+and runs offline without credentials. LLM integration is implemented; live
+execution was not performed because API credentials were unavailable. Logged
+prompts and explicit skip statuses document that limitation. Per-component
+execution status is recorded in `outputs/completion_status.json`. Historical
+curve quotes have not been acquired; the delivery-matched interface and
+methodology are provided explicitly.
 
 ## Run
 

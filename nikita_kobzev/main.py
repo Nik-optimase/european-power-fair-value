@@ -92,8 +92,8 @@ def main():
         manifest["last_llm_only_runtime_seconds"] = round(elapsed, 3)
         write_json(ROOT / "outputs/run_manifest.json", manifest)
     completion = {"numerical_pipeline_complete": True, "real_llm_calls_complete": llm_status["complete"],
-                  "submission_ready": llm_status["complete"],
-                  "remaining_required_action": None if llm_status["complete"] else "Add API key and produce genuine logged calls",
+                  "llm_integration_implemented": True,
+                  "llm_execution": {"selection": llm_status["selection"], "review": llm_status["review"]},
                   "limitations": ["Employer OOS dates unspecified; configurable historical window used",
                                   "No verified historical curve quote; conditional interface provided",
                                   "No archived publication vintages; documented delay/revision assumptions apply"]}

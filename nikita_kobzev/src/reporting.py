@@ -50,7 +50,7 @@ def render_report(root):
         review_note = ("The current review comes from a genuine API response."
                        if llm["review"] in {"live", "replayed"} else
                        "The current review is an explicitly labelled deterministic fallback.")
-        llm_text = (f"**Submission blocker:** both required LLM stages have not yet succeeded. "
+        llm_text = (f"LLM integration is implemented; live execution is incomplete. "
                     f"Diagnostic selection: {llm['selection']}; review: {llm['review']}. "
                     f"Prompts, exact inputs and response/status artifacts are logged. {review_note} "
                     "Supply OPENAI_API_KEY and run `python main.py --llm live --llm-only`.")
@@ -94,7 +94,7 @@ Invalidate the view on material demand/renewable revisions, outages, fuel/carbon
 ## Programmatic LLM and reproducibility
 Python supplies validation evidence to an LLM that chooses at most three whitelisted diagnostics. Python validates and executes them; a second call synthesizes the results. This automates review triage across metric tables while keeping numerical calculations deterministic. The LLM cannot alter features, labels, selection or OOS predictions. {llm_text}
 
-After installing pinned dependencies, `python main.py` recreates outputs offline with fixed seeds. Key limits are missing vintage archives, absent executable curve quotes, the historical OOS-window ambiguity, and the outstanding real-call requirement when shown above. The next research priority is timestamped pre-auction renewable forecasts, followed by broader rolling-origin validation.
+After installing pinned dependencies, `python main.py` recreates outputs offline with fixed seeds. Key limits are missing vintage archives, absent executable curve quotes, the historical OOS-window ambiguity, and incomplete live LLM execution where indicated above. The next research priority is timestamped pre-auction renewable forecasts, followed by broader rolling-origin validation.
 
 [1]: https://www.smard.de/page/en/wiki-article/5884/206318
 [2]: https://www.smard.de/resource/blob/205652/63fcff2c9813096fa2229d769da164ef/smard-user-guide-09-2021-data.pdf

@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.DS_Store
+.cache/
+catboost_info/
+nikita_kobzev/data/raw/
+nikita_kobzev/data/de_power_refetched.csv
