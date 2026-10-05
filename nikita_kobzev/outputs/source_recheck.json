@@ -1,0 +1,64 @@
+{
+  "checked_at_utc": "2026-10-05T06:34:11.698808+00:00",
+  "dataset_modified": false,
+  "delivery_day": "2026-09-26",
+  "different_values": 36,
+  "interpretation": "Fresh-source disagreement in actual load and solar; historical revisions or source-compilation differences cannot be distinguished without the original extraction snapshot/builder. No evidence here of price-target disagreement. This does not validate vintages for other days.",
+  "oos_features_unchanged_for_this_sample": true,
+  "series": [
+    {
+      "all_equal": true,
+      "column": "price_da_eur_mwh",
+      "max_absolute_difference": 0.0,
+      "rows": 24
+    },
+    {
+      "all_equal": false,
+      "column": "load_actual_mwh",
+      "max_absolute_difference": 2.5,
+      "rows": 24
+    },
+    {
+      "all_equal": true,
+      "column": "load_forecast_mwh",
+      "max_absolute_difference": 0.0,
+      "rows": 24
+    },
+    {
+      "all_equal": true,
+      "column": "wind_onshore_actual_mwh",
+      "max_absolute_difference": 0.0,
+      "rows": 24
+    },
+    {
+      "all_equal": true,
+      "column": "wind_offshore_actual_mwh",
+      "max_absolute_difference": 0.0,
+      "rows": 24
+    },
+    {
+      "all_equal": false,
+      "column": "solar_actual_mwh",
+      "max_absolute_difference": 320.8199999999997,
+      "rows": 24
+    },
+    {
+      "all_equal": true,
+      "column": "wind_onshore_forecast_mwh",
+      "max_absolute_difference": 0.0,
+      "rows": 24
+    },
+    {
+      "all_equal": true,
+      "column": "wind_offshore_forecast_mwh",
+      "max_absolute_difference": 0.0,
+      "rows": 24
+    },
+    {
+      "all_equal": true,
+      "column": "solar_forecast_mwh",
+      "max_absolute_difference": 0.0,
+      "rows": 24
+    }
+  ]
+}

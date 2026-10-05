@@ -1,0 +1,8 @@
+{
+  "names": [
+    "negative_price_analysis",
+    "pre_post_2025_10_market_change",
+    "feature_ablation"
+  ],
+  "selection_origin": "deterministic_fallback"
+}

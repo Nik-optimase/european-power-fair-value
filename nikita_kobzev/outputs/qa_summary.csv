@@ -1,0 +1,24 @@
+check,passed,detail
+unique_utc,True,
+sorted_utc,True,
+continuous_hourly_utc,True,
+hour_aligned,True,
+main_values_present,True,
+main_values_finite,True,
+nonnegative_physical,True,
+arithmetic_wind_actual_mwh,True,
+arithmetic_wind_forecast_mwh,True,
+arithmetic_load_error_mwh,True,
+arithmetic_wind_error_mwh,True,
+arithmetic_solar_error_mwh,True,
+arithmetic_residual_load_forecast_mwh,True,
+stored_lag_price_lag_24,True,Expected 24 initial unavailable hours
+stored_lag_price_lag_168,True,Expected 168 initial unavailable hours
+stored_lag_wind_actual_lag_24,True,Expected 24 initial unavailable hours
+stored_lag_solar_actual_lag_24,True,Expected 24 initial unavailable hours
+calendar_hour,True,
+calendar_day_of_week,True,
+calendar_month,True,
+calendar_is_weekend,True,
+complete_local_days,True,
+local_fold_offsets,True,

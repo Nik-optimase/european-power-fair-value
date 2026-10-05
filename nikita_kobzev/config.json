@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "timezone": "Europe/Berlin",
+  "forecast_hour": 11,
+  "actual_publication_delay_hours": 3,
+  "validation_start": "2026-03-01",
+  "oos_start": "2026-08-30",
+  "oos_end_exclusive": "2026-09-27",
+  "high_price_threshold": 200.0,
+  "catboost_candidates": [
+    {"iterations": 500, "depth": 6, "learning_rate": 0.05, "l2_leaf_reg": 5},
+    {"iterations": 650, "depth": 8, "learning_rate": 0.04, "l2_leaf_reg": 7}
+  ]
+}

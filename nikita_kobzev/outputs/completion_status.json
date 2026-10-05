@@ -1,0 +1,11 @@
+{
+  "limitations": [
+    "Employer OOS dates unspecified; configurable historical window used",
+    "No verified historical curve quote; conditional interface provided",
+    "No archived publication vintages; documented delay/revision assumptions apply"
+  ],
+  "numerical_pipeline_complete": true,
+  "real_llm_calls_complete": false,
+  "remaining_required_action": "Add API key and produce genuine logged calls",
+  "submission_ready": false
+}

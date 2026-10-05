@@ -1,0 +1,27 @@
+{
+  "curve_formula": "F_new = F_quote + H_day/H_contract * (FV_day - curve_implied_day)",
+  "instrument": "EEX German Power Base Week / Month, if independently timestamped public quotes are supplied",
+  "interpretation": "Positive revision is upward pressure on conditional curve value; negative is downward. Not an executable trade signal or independent full-period forecast.",
+  "invalidation": [
+    "Material load/renewable forecast revision or plant outage",
+    "Large gas/carbon move",
+    "Input outside training support",
+    "Recent forecast errors exceed validation reference",
+    "Quote stale, observed after forecast, or contract delivery mismatched"
+  ],
+  "last_day_fair_value_eur_mwh": 95.90712230826881,
+  "last_delivery_day": "2026-09-26",
+  "latest_revision_vs_weekly_baseline": 53.24128897493548,
+  "limitations": [
+    "One-day forecasts produced at different origins cannot be pooled into a same-origin front-week/month forecast.",
+    "Quoted futures contain risk premia and bid/ask costs; settlement marks are not executable bids or offers.",
+    "q80 is a descriptive validation error reference, not a calibrated confidence interval.",
+    "No trading P&L or proven strategy is claimed."
+  ],
+  "matched_quote_count": 0,
+  "quote_status_detail": "No verified public historical contract quote was acquired; supplied header is an input contract, not fabricated market data.",
+  "reference_source": "https://www.eex.com/en/market-data/market-data-hub",
+  "shape": "Previous seven local delivery days, shifted additively to average to the observed contract quote",
+  "status": "no_usable_curve_quotes",
+  "validation_daily_absolute_error_q80": 34.16455365590229
+}

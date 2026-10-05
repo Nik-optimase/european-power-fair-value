@@ -1,0 +1,8 @@
+{
+  "mode": "replay",
+  "model": "gpt-6-luna",
+  "reason": "No matching genuine response in cache",
+  "request_sha256": "68754bfff5a34ea0e1f3c77edb08b033f8ff973561b1a3e10f369ad9d57710cb",
+  "stage": "review",
+  "status": "skipped"
+}

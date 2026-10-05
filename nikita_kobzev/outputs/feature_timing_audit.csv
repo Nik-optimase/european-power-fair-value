@@ -1,0 +1,11 @@
+feature,available_rows,timing_violations,minimum_margin_hours
+price_prev_day_same_hour,17496,0,20.0
+price_prev_week_same_hour,17352,0,164.0
+price_prev_day_mean,17496,0,20.0
+price_prev_day_std,17496,0,20.0
+load_actual_lag_48,17472,0,7.0
+load_actual_lag_168,17352,0,127.0
+wind_actual_lag_48,17472,0,7.0
+wind_actual_lag_168,17352,0,127.0
+solar_actual_lag_48,17472,0,7.0
+solar_actual_lag_168,17352,0,127.0

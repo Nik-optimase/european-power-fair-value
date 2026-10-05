@@ -1,0 +1,29 @@
+column,dtype,null_count
+datetime,object,0
+datetime_utc,object,0
+price_da_eur_mwh,float64,0
+load_forecast_mwh,float64,0
+load_actual_mwh,float64,0
+load_error_mwh,float64,0
+wind_onshore_forecast_mwh,float64,0
+wind_offshore_forecast_mwh,float64,0
+wind_forecast_mwh,float64,0
+wind_onshore_actual_mwh,float64,0
+wind_offshore_actual_mwh,float64,0
+wind_actual_mwh,float64,0
+wind_error_mwh,float64,0
+solar_forecast_mwh,float64,0
+solar_actual_mwh,float64,0
+solar_error_mwh,float64,0
+residual_load_forecast_mwh,float64,0
+price_lag_24,float64,24
+price_lag_168,float64,168
+wind_actual_lag_24,float64,24
+solar_actual_lag_24,float64,24
+hour,int64,0
+day_of_week,int64,0
+month,int64,0
+is_weekend,int64,0
+Datum von,object,0
+Datum bis,object,0
+_occurrence,int64,0

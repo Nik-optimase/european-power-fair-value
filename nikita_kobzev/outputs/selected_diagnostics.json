@@ -1,0 +1,104 @@
+{
+  "feature_ablation": {
+    "bias": -2.741051888,
+    "experiment": "CatBoost without all physical drivers; same parameters",
+    "features": [
+      "price_prev_day_same_hour",
+      "price_prev_week_same_hour",
+      "price_prev_day_mean",
+      "price_prev_day_std",
+      "hour",
+      "day_of_week",
+      "month",
+      "is_weekend"
+    ],
+    "mae": 28.5659478856,
+    "n": 4367,
+    "rmse": 41.2299729546,
+    "selection_effect": "none; review-only"
+  },
+  "negative_price_analysis": [
+    {
+      "bias": 31.7769651622,
+      "mae": 42.3540507035,
+      "model": "catboost",
+      "n": 403,
+      "regime": "negative_price",
+      "rmse": 64.8963733633
+    },
+    {
+      "bias": 25.2999255583,
+      "mae": 44.7343672457,
+      "model": "daily_persistence",
+      "n": 403,
+      "regime": "negative_price",
+      "rmse": 80.0006263297
+    },
+    {
+      "bias": 39.2299627792,
+      "mae": 53.6517493797,
+      "model": "weekly_persistence",
+      "n": 403,
+      "regime": "negative_price",
+      "rmse": 85.5494138263
+    },
+    {
+      "bias": 25.7367286227,
+      "mae": 38.4448132678,
+      "model": "linear_regression",
+      "n": 403,
+      "regime": "negative_price",
+      "rmse": 62.4759685901
+    }
+  ],
+  "pre_post_2025_10_market_change": [
+    {
+      "bias": -2.618125,
+      "mae": 33.4105416667,
+      "model": "daily_persistence",
+      "n": 720,
+      "regime": "September_2025",
+      "rmse": 51.5274149267
+    },
+    {
+      "bias": 1.3804362416,
+      "mae": 29.5598724832,
+      "model": "daily_persistence",
+      "n": 745,
+      "regime": "October_2025",
+      "rmse": 45.2187782387
+    },
+    {
+      "bias": -2.378,
+      "mae": 41.1041944444,
+      "model": "weekly_persistence",
+      "n": 720,
+      "regime": "September_2025",
+      "rmse": 61.6787321012
+    },
+    {
+      "bias": 9.7496107383,
+      "mae": 43.475033557,
+      "model": "weekly_persistence",
+      "n": 745,
+      "regime": "October_2025",
+      "rmse": 60.1617498675
+    },
+    {
+      "bias": 5.5404184002,
+      "mae": 28.7529927627,
+      "model": "catboost",
+      "n": 720,
+      "regime": "September_2025",
+      "rmse": 42.7898935356
+    },
+    {
+      "bias": 12.0623040736,
+      "mae": 26.215147198,
+      "model": "catboost",
+      "n": 745,
+      "regime": "October_2025",
+      "rmse": 36.68803681
+    }
+  ]
+}

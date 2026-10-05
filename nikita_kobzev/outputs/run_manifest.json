@@ -1,0 +1,37 @@
+{
+  "config": {
+    "actual_publication_delay_hours": 3,
+    "catboost_candidates": [
+      {
+        "depth": 6,
+        "iterations": 500,
+        "l2_leaf_reg": 5,
+        "learning_rate": 0.05
+      },
+      {
+        "depth": 8,
+        "iterations": 650,
+        "l2_leaf_reg": 7,
+        "learning_rate": 0.04
+      }
+    ],
+    "forecast_hour": 11,
+    "high_price_threshold": 200.0,
+    "oos_end_exclusive": "2026-09-27",
+    "oos_start": "2026-08-30",
+    "seed": 42,
+    "timezone": "Europe/Berlin",
+    "validation_start": "2026-03-01"
+  },
+  "dataset_sha256": "d762d2e8068e2ee2ad8f3b324087187c12cfa46107c051af6e924a02320f2bc6",
+  "llm": {
+    "blocker": "Genuine successful programmatic diagnostic-selection and review calls required",
+    "complete": false,
+    "review": "skipped",
+    "selection": "skipped"
+  },
+  "mode": "historical sequential next-day backtest; fixed final model",
+  "predictions_sha256": "e14259a959c1fce651c6d978e99a4cc753601d8e23a9b6e553caa75a67475a6f",
+  "runtime_seconds": 22.294,
+  "winner": "catboost"
+}

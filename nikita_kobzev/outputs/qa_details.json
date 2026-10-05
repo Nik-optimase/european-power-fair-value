@@ -1,0 +1,23 @@
+{
+  "columns": 28,
+  "dst_days": {
+    "2024-10-27": 25,
+    "2025-03-30": 23,
+    "2025-10-26": 25,
+    "2026-03-29": 23
+  },
+  "end_local": "2026-09-26 23:00:00+02:00",
+  "null_counts": {
+    "price_lag_168": 168,
+    "price_lag_24": 24,
+    "solar_actual_lag_24": 24,
+    "wind_actual_lag_24": 24
+  },
+  "rows": 17520,
+  "sha256": "d762d2e8068e2ee2ad8f3b324087187c12cfa46107c051af6e924a02320f2bc6",
+  "start_local": "2024-09-27 00:00:00+02:00",
+  "warnings": [
+    "CSV has no original forecast issue/revision timestamps.",
+    "Historical actuals may contain later revisions; no vintage-certified backtest is claimed."
+  ]
+}

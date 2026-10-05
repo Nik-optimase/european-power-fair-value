@@ -1,0 +1,10 @@
+module_id,column,sample_day,hours,max_abs_difference
+8004169,price_da_eur_mwh,2025-10-26,25,0.0
+5000410,load_actual_mwh,2025-10-26,25,0.0
+6000411,load_forecast_mwh,2025-10-26,25,0.0
+1004067,wind_onshore_actual_mwh,2025-10-26,25,0.0
+1001225,wind_offshore_actual_mwh,2025-10-26,25,0.0
+1004068,solar_actual_mwh,2025-10-26,25,0.0
+2000123,wind_onshore_forecast_mwh,2025-10-26,25,0.0
+2003791,wind_offshore_forecast_mwh,2025-10-26,25,0.0
+2000125,solar_forecast_mwh,2025-10-26,25,0.0

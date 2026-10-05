@@ -1,0 +1,75 @@
+{
+  "catboost_parameters": {
+    "depth": 6,
+    "iterations": 500,
+    "l2_leaf_reg": 5,
+    "learning_rate": 0.05
+  },
+  "features": [
+    "price_prev_day_same_hour",
+    "price_prev_week_same_hour",
+    "price_prev_day_mean",
+    "price_prev_day_std",
+    "load_actual_lag_48",
+    "load_actual_lag_168",
+    "wind_actual_lag_48",
+    "wind_actual_lag_168",
+    "solar_actual_lag_48",
+    "solar_actual_lag_168",
+    "hour",
+    "day_of_week",
+    "month",
+    "is_weekend"
+  ],
+  "oos_dates_status": "Researcher-selected historical holdout; employer supplied no exact dates",
+  "periods": {
+    "oos": {
+      "end_inclusive": "2026-09-26 23:00:00+02:00",
+      "rows": 672,
+      "start": "2026-08-30 00:00:00+02:00"
+    },
+    "train": {
+      "end_inclusive": "2026-02-28 23:00:00+01:00",
+      "rows": 12313,
+      "start": "2024-10-04 00:00:00+02:00"
+    },
+    "validation": {
+      "end_inclusive": "2026-08-29 23:00:00+02:00",
+      "rows": 4367,
+      "start": "2026-03-01 00:00:00+01:00"
+    }
+  },
+  "seed": 42,
+  "selection_rule": "Lowest validation MAE; RMSE and name break ties",
+  "validation_metrics": [
+    {
+      "bias": -0.1779196244561484,
+      "mae": 31.543371880009158,
+      "model": "daily_persistence",
+      "n": 4367,
+      "rmse": 49.83386940383433
+    },
+    {
+      "bias": -1.941707121593771,
+      "mae": 39.13934623311197,
+      "model": "weekly_persistence",
+      "n": 4367,
+      "rmse": 59.993071579833355
+    },
+    {
+      "bias": -12.706555337714923,
+      "mae": 30.141313278510104,
+      "model": "linear_regression",
+      "n": 4367,
+      "rmse": 42.6814793611469
+    },
+    {
+      "bias": -5.676603075964507,
+      "mae": 27.881421379697496,
+      "model": "catboost",
+      "n": 4367,
+      "rmse": 40.949831300385036
+    }
+  ],
+  "winner": "catboost"
+}

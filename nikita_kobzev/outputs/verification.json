@@ -1,0 +1,51 @@
+{
+  "audit_date": "2026-10-05",
+  "python_version": "3.10.11",
+  "system": "Darwin",
+  "architecture": "arm64",
+  "fresh_environment_install": "All 28 pinned dependencies installed successfully; pip check passes; pip freeze matches requirements exactly",
+  "tests_passed": 19,
+  "qa_assertions_passed": 23,
+  "full_pipeline_exit_code": 0,
+  "full_pipeline_runtime_seconds": 22.294,
+  "clean_copy_runtime_seconds": 30.87,
+  "reproduction_hash_checks": {
+    "predictions.csv": true,
+    "outputs/model_comparison.csv": true,
+    "outputs/oos_metrics.csv": true,
+    "ai_logs/diagnostic_request.json": true,
+    "ai_logs/review_request.json": true
+  },
+  "independent_metric_recalculations": [
+    "validation/catboost",
+    "validation/linear_regression",
+    "validation/daily_persistence",
+    "validation/weekly_persistence",
+    "oos/daily_persistence",
+    "oos/weekly_persistence",
+    "oos/linear_regression",
+    "oos/catboost"
+  ],
+  "independent_persistence_and_daily_value_checks": true,
+  "predictions_rows": 672,
+  "report_metrics_match": true,
+  "preserved_dataset_matches_owner_file": true,
+  "feature_timing_violations": 0,
+  "minimum_physical_availability_margin_hours": 7,
+  "absolute_local_paths_found": [],
+  "credential_patterns_found": [],
+  "visual_review": "All six regenerated PNG figures inspected; labels legible, no clipping",
+  "llm_status": "No real calls. Missing-key CLI, exact-request cache protocol, incomplete/refused/error responses, corrupt caches and partial success covered. All API fixtures synthetic and temporary.",
+  "llm_cli_checks": {
+    "llm_only_missing_key_exit_code": 0,
+    "stale_config_rejected": true,
+    "predictions_and_requests_unchanged": true
+  },
+  "optional_fetch_verification": "Original 2025-10-26 sample: all 225 values match. Fresh 2026-09-26 sample: 216 values checked; 36 actual load/solar differences disclosed; all 24 prices match. No changes to input; OOS features unaffected by these specific differences.",
+  "remote_repository": "Not created; prior GitHub browser access denial remains in effect",
+  "curve_acquisition": "No verified historical quotes; only implementation, timing/DST tests and conditional methodology checked",
+  "openai_documentation_checked": [
+    "https://developers.openai.com/api/docs/models/gpt-6-luna",
+    "https://developers.openai.com/api/docs/guides/structured-outputs"
+  ]
+}
